@@ -20,19 +20,55 @@
 		<div id="content">
 			<div id="code">
 				<span class="comments">/**</span><br />
-				<span class="space"/><span class="comments">* We are both Fudan SSers and programmers,</span><br />
-				<span class="space"/><span class="comments">* so I write some code to celebrate our 1st anniversary.</span><br />
+				<span class="space"/><span class="comments">* I know you think programming is cool,</span><br />
+				<span class="space"/><span class="comments">* so I decide to write this website as your birthday gift.</span><br />
+				<span class="space"/><span class="comments">* Told you. You have the best boyfriend in the world :D</span><br />
 				<span class="space"/><span class="comments">*/</span><br />
-				Boy i = <span class="keyword">new</span> Boy(<span class="string">"hackerzhou"</span>);<br />
-				Girl u = <span class="keyword">new</span> Girl(<span class="string">"MaryNee"</span>);<br />
-				<span class="comments">// Nov 2, 2010, I told you I love you. </span><br />
-				i.love(u);<br />
-				<span class="comments">// Luckily, you accepted and became my girlfriend eversince.</span><br />
+				Boy i = <span class="keyword">new</span> Boy(<span class="string">"smartZL"</span>);<br />
+				Girl u = <span class="keyword">new</span> Girl(<span class="string">"bakaRS"</span>);<br />
+				<span class="comments">// Seven years ago, I met you. </span><br />
+				i.met(u);<br />
+				<span class="comments">// It was by chance we met, by choice we became friends. </span><br />
+				i.friend(u);<br />
+				we = <span class="keyword">new</span> Friendship(<span class="string">"i, u"</span>);<br />
+				<span class="comments">// Since then, you've been my best friend. </span><br />
+				we.setToBe(bestFriends);<br />
+				<span class="comments">// For seven years. </span><br />
+				we.friendTime = 7;<br />
+				<span class="comments">// That in itself is a tremendous thing. </span><br />
+				we.attribute = "tremendous";<br />
+				<span class="comments">// One day, everything changed. </span><br />
+				we.update();<br />
+				<span class="comments">// April 14, 2016, I told you I love you. </span><br />
+				i.said("I Love You");<br />
+				<span class="comments">// You have no idea how fast my heart was beating when I burst out those words.</span><br />
+				i.heartBeat("120/mins");<br />
+				<span class="comments">// Then ...</span><br />
+				pause();<br />
+				<span class="comments">// You accepted and became my girlfriend!</span><br />
 				u.accepted();<br />
-				<span class="comments">// Since then, I miss u every day.</span><br />
+				<span class="comments">// Suddenly, all the love songs were about you.</span><br />
+				u.occupied(i.mind);<br />
+				<span class="comments">// I've couldn't stop missing you.</span><br />
 				i.miss(u);<br />
-				<span class="comments">// And take care of u and our love.</span><br />
-				i.takeCareOf(u);<br />
+				<span class="comments">// You are the first thing and last thing on my mind each and every day.</span><br />
+				i.thinkAbout(u);<br />
+				<span class="comments">// I love your smile.</span><br />
+				i.love(u.smile);<br />
+				<span class="comments">// I love your voice.</span><br />
+				i.love(u.voice);<br />
+				<span class="comments">// I love your eyes.</span><br />
+				i.love(u.eyes);<br />
+				<span class="comments">// I love those hugs where you just don't want to let go.</span><br />
+				i.love(u.hug);<br />
+				<span class="comments">// I love those kisses when you are shy and lovable.</span><br />
+				i.love(u.kiss);<br />
+				<span class="comments">// I love you.</span><br />
+				i.love(u);<br />
+				<span class="comments">// Forever.</span><br />
+				we.loveTime = forever;<br />
+				<span class="comments">// I know forever is a long time, but I wouldn't mind spending it with you.</span><br />
+				i.restLife(u)
 				<span class="comments">// You say that you won't be so easy to marry me.</span><br />
 				<span class="comments">// So I keep waiting and I have confidence that you will.</span><br />
 				<span class="keyword">boolean</span> isHesitate = <span class="keyword">true</span>;<br />
@@ -61,8 +97,8 @@
 			</div>
 		</div>
 		<div id="copyright">
-			Inspired by <a href="http://www.openrise.com/lab/FlowerPower/">FlowerPower</a> project.<br />
-			Copyright © 2011 <a href='http://hackerzhou.me'>hackerzhou.me</a> 2009-2011
+			Specially designed for Ruoshi.<br />
+			Copyright © 2016 <a href='http://www.ruoshibaobao.com'>alanlou</a> 2016-2016
 		</div>
 	</div>
 	<script type="text/javascript">
@@ -83,7 +119,7 @@
 			$("#code").css("display", "none")
 			$("#copyright").css("position", "absolute");
 			$("#copyright").css("bottom", "10px");
-		    document.execCommand("stop");
+		    document.execCommand("stop"); 
 		} else {
 			setTimeout(function () {
 				startHeartAnimation();
