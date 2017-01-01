@@ -72,7 +72,9 @@ function startHeartAnimation() {
             var d = a(this),
                 c = d.html(),
                 b = 0,
-                e = 0;
+                m = -2,
+                s = 0;
+
             d.html("");
             var e = setInterval(function() {
                 var f = c.substr(b, 1);
@@ -81,10 +83,28 @@ function startHeartAnimation() {
                 } else {
                     b++
                 }
-                if (b > 100){
-                    d++
+
+                if (f == "👫") {
+                    s = 1
                 }
-                d.html(c.substring(d, b) + (b & 1 ? "_" : ""));
+
+                if (s == 1){
+                    if (m == -2) {
+                        m++
+                    } else if (m == -1) {
+                        m++
+                    } else {
+                        var n = c.substr(m, 1);
+                        if (n == "<") {
+                            m = c.indexOf(">", m) + 1
+                        } else {
+                            m++
+                        }
+                    }
+                }
+
+
+                d.html(c.substring(m, b) + (b & 1 ? "_" : ""));
                 if (b >= c.length) {
                     clearInterval(e)
                 }
