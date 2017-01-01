@@ -84,6 +84,7 @@ function startHeartAnimation() {
                     console.log(l);
                     if (l = "<br />"){
                         x++
+                        console.log("HERE");
                     }
                     b = c.indexOf(">", b) + 1
                 } else {
