@@ -84,7 +84,7 @@ function startHeartAnimation() {
                     b++
                 }
 
-                if (f == ":") {
+                if (f == "👫") {
                     s = 1
                 }
 
@@ -94,17 +94,7 @@ function startHeartAnimation() {
                     } else if (m == -1) {
                         m++
                     } else {
-                        m = 10
-                        if(0){
-                            m = c.indexOf(">", m) + 1
-                            var n = c.substr(m, 1);
-                            if (n == "<") {
-                                m = c.indexOf(">", m) + 1
-                            } else {
-                                m++
-                            }
-                            
-                        }
+                        m = c.indexOf("<br />", m) + 1
                     }
                 }
 
