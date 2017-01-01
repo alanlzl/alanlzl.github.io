@@ -81,7 +81,7 @@ function startHeartAnimation() {
                 var f = c.substr(b, 1);
                 if (f == "<") {
                     var l = c.substr(b, 6);
-                    if (l = "<br />"){
+                    if (l == "<br />"){
                         x++
                         console.log("HERE: "+x);
                     }
