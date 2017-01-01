@@ -85,9 +85,7 @@ function startHeartAnimation() {
                 }
 
                 if (f == ":") {
-                    s = 0
-                    m = 10
-                    $("#loveu").fadeOut(30)
+                    s = 1
                 }
 
                 if (s == 1){
@@ -96,12 +94,16 @@ function startHeartAnimation() {
                     } else if (m == -1) {
                         m++
                     } else {
-                        m = c.indexOf(">", m) + 1
-                        var n = c.substr(m, 1);
-                        if (n == "<") {
+                        m = 10
+                        if(0){
                             m = c.indexOf(">", m) + 1
-                        } else {
-                            m++
+                            var n = c.substr(m, 1);
+                            if (n == "<") {
+                                m = c.indexOf(">", m) + 1
+                            } else {
+                                m++
+                            }
+                            
                         }
                     }
                 }
