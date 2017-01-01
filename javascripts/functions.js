@@ -85,7 +85,8 @@ function startHeartAnimation() {
                 }
 
                 if (f == ":") {
-                    s = 1
+                    s = 0
+                    m = 10
                 }
 
                 if (s == 1){
