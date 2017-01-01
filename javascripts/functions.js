@@ -73,18 +73,24 @@ function startHeartAnimation() {
                 c = d.html(),
                 b = 0,
                 m = -2,
-                s = 0;
+                s = 0
+                x = 0;
 
             d.html("");
             var e = setInterval(function() {
                 var f = c.substr(b, 1);
                 if (f == "<") {
+                    var l = c.substr(b, 6);
+                    console.log(l);
+                    if (l = "<br />"){
+                        x++
+                    }
                     b = c.indexOf(">", b) + 1
                 } else {
                     b++
                 }
 
-                if (f == "👫") {
+                if (x>2) {
                     s = 1
                 }
 
@@ -94,7 +100,7 @@ function startHeartAnimation() {
                     } else if (m == -1) {
                         m++
                     } else {
-                        m = 8
+                        m = c.indexOf("<br />", m) + 1
                     }
                 }
 
