@@ -94,7 +94,7 @@ function startHeartAnimation() {
                     } else if (m == -1) {
                         m++
                     } else {
-                        m = c.indexOf("<br />", m) + 1
+                        m = 8
                     }
                 }
 
