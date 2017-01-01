@@ -87,6 +87,7 @@ function startHeartAnimation() {
                 if (f == ":") {
                     s = 0
                     m = 10
+                    $("#loveu").fadeOut(30)
                 }
 
                 if (s == 1){
