@@ -81,12 +81,16 @@ function startHeartAnimation() {
                 }
                 
                 if (current == '<' || current == ' '){
-                    console.log("HERE ENTER New5");
+                    console.log("HERE ENTER New6");
                     //apd_str = (progress & 1 ? '_' : '');
                     apd_str = ''
                 } else {
-                    console.log("HERE New5");
-                    apd_str = (progress & 1 ? '_' : '')
+                    console.log("HERE New6");
+                    if((progress%2) == 1){
+                        apd_str = '_'
+                    } else {
+                        apd_str = ''
+                    }
                 }
                 
                 console.log(current);
