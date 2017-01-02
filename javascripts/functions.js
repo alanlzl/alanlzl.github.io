@@ -80,8 +80,10 @@ function startHeartAnimation() {
                 }
                 $ele.html(str.substring(0, progress) + (progress & 1 ? '_' : ''));
 
-                var code = document.getElementById('code');
-                code.scrollTop = code.scrollHeight;
+                if (current != '<'){
+                    var code = document.getElementById('code');
+                    code.scrollTop = code.scrollHeight;
+                }
 
                 if (progress >= str.length) {
                     clearInterval(timer);
