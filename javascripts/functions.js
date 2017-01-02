@@ -84,8 +84,9 @@ function startHeartAnimation() {
                     console.log("HERE ENTER New");
                 } else {
                     console.log("HERE New");
-                    $ele.html(str.substring(0, progress) + (progress & 1 ? '_' : ''));
                 }
+                
+                $ele.html(str.substring(0, progress) + (progress & 1 ? '_' : ''));
                 
                 var code = document.getElementById('code');
                 code.scrollTop = code.scrollHeight;
