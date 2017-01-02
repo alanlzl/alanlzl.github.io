@@ -80,11 +80,11 @@ function startHeartAnimation() {
                 }
 
                 
-                $ele.html(str.substring(0, progress));
                 if (current == '<'){
                     console.log("HERE ENTER");
                 } else {
                     console.log("HERE");
+                    $ele.html(str.substring(0, progress));
                 }
                 
                 var code = document.getElementById('code');
