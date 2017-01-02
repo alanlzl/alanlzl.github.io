@@ -66,53 +66,30 @@ function startHeartAnimation() {
     }, c)
 }
 
-(function(a) {
-    a.fn.typewriter = function() {
+(function($) {
+    $.fn.typewriter = function() {
         this.each(function() {
-            var d = a(this),
-                c = d.html(),
-                b = 0,
-                m = -2,
-                s = 0
-                x = 0;
-
-            d.html("");
-            var e = setInterval(function() {
-                var f = c.substr(b, 1);
-                if (f == "<") {
-                    var l = c.substr(b, 6);
-                    if (l == "<br />"){
-                        x++
-                        console.log("HERE: "+x);
-                    }
-                    b = c.indexOf(">", b) + 1
+            var $ele = $(this), str = $ele.html(), progress = 0;
+            $ele.html('');
+            var timer = setInterval(function() {
+                var current = str.substr(progress, 1);
+                if (current == '<') {
+                    progress = str.indexOf('>', progress) + 1;
                 } else {
-                    b++
+                    progress++;
                 }
+                $ele.html(str.substring(0, progress) + (progress & 1 ? '_' : ''));
 
-                if (x>2) {
-                    s = 1
+                var code = document.getElementById('code');
+                code.scrollTop = code.scrollHeight;
+
+                if (progress >= str.length) {
+                    clearInterval(timer);
                 }
-
-                if (s == 1){
-                    if (m == -2) {
-                        m++
-                    } else if (m == -1) {
-                        m++
-                    } else {
-                        m = c.indexOf("<br />", m) + 1
-                    }
-                }
-
-
-                d.html(c.substring(m, b) + (b & 1 ? "_" : ""));
-                if (b >= c.length) {
-                    clearInterval(e)
-                }
-            }, 75)
+            }, 75);
         });
-        return this
-    }
+        return this;
+    };
 })(jQuery);
 
 function timeElapse(c) {
