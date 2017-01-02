@@ -79,7 +79,6 @@ function startHeartAnimation() {
                 } else {
                     progress++;
                 }
-    
                 
                 if (current == '<'){
                     console.log("HERE ENTER New4");
@@ -89,6 +88,8 @@ function startHeartAnimation() {
                     console.log("HERE New4");
                     //apd_str = ''
                 }
+                
+                console.log(current);
                 
                 $ele.html(str.substring(0, progress) + apd_str);
             
