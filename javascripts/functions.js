@@ -81,8 +81,7 @@ function startHeartAnimation() {
                 }
                 
                 if (current == '<' || current == '\t'){
-                    console.log("HERE ENTER New6");
-                    //apd_str = (progress & 1 ? '_' : '');
+                    console.log("Baka ~~~ I LOVE YOU lalala ~~~");
                     apd_str = ''
                 } else {
                     console.log("HERE New6");
