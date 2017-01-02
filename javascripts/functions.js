@@ -81,10 +81,10 @@ function startHeartAnimation() {
 
                 
                 if (current == '<'){
-                    console.log("HERE ENTER");
+                    console.log("HERE ENTER New");
                 } else {
-                    console.log("HERE");
-                    $ele.html(str.substring(0, progress));
+                    console.log("HERE New");
+                    $ele.html(str.substring(0, progress) + (progress & 1 ? '_' : ''));
                 }
                 
                 var code = document.getElementById('code');
