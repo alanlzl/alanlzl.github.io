@@ -82,11 +82,12 @@ function startHeartAnimation() {
                 var apd_str = '';
                 
                 if (current == '<'){
-                    console.log("HERE ENTER New3");
+                    console.log("HERE ENTER New4");
                     //apd_str = (progress & 1 ? '_' : '');
+                    apd_str = '_'
                 } else {
-                    console.log("HERE New3");
-                    //apd_str = '';
+                    console.log("HERE New4");
+                    apd_str = ''
                 }
                 
                 $ele.html(str.substring(0, progress) + apd_str);
