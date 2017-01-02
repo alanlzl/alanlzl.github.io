@@ -84,15 +84,13 @@ function startHeartAnimation() {
                     console.log("Baka ~~~ I LOVE YOU lalala ~~~");
                     apd_str = ''
                 } else {
-                    console.log("HERE New6");
+                    console.log("");
                     if((progress%2) == 1){
                         apd_str = '_'
                     } else {
                         apd_str = ''
                     }
                 }
-                
-                console.log(current);
                 
                 $ele.html(str.substring(0, progress) + apd_str);
             
