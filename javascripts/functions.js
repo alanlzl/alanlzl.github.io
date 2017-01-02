@@ -82,7 +82,7 @@ function startHeartAnimation() {
                 if (current == '<'){
                     $ele.html(str.substring(0, progress) + (progress & 1 ? '_' : ''));
                 }else{
-                    $ele.html(str.substring(0, progress) + (progress & 1 ? '_' : ''));
+                    $ele.html(str.substring(0, progress));
                 }
                 
                 var code = document.getElementById('code');
