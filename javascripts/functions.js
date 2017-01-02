@@ -78,7 +78,7 @@ function startHeartAnimation() {
                 } else {
                     progress++;
                 }
-                $ele.html(str.substring(0, progress);
+                $ele.html(str.substring(0, progress));
 
                 if (current != '<'){
                     var code = document.getElementById('code');
