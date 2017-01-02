@@ -80,8 +80,8 @@ function startHeartAnimation() {
                 }
 
                 if (current == '<'){
-                    $ele.html(str.substring(0, progress) + (progress & 1 ? '_' : ''));
-                }else{
+                    $ele.html(str.substring(0, progress));
+                } else {
                     $ele.html(str.substring(0, progress));
                 }
                 
