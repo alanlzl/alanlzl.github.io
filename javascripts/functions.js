@@ -80,13 +80,13 @@ function startHeartAnimation() {
                     progress++;
                 }
                 
-                if (current == '<'){
+                if (current == '<' || current == ' '){
                     console.log("HERE ENTER New5");
                     //apd_str = (progress & 1 ? '_' : '');
                     apd_str = ''
                 } else {
                     console.log("HERE New5");
-                    apd_str = '_'
+                    apd_str = (progress & 1 ? '_' : '')
                 }
                 
                 console.log(current);
