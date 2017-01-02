@@ -70,7 +70,7 @@ function startHeartAnimation() {
     $.fn.typewriter = function() {
         this.each(function() {
             var $ele = $(this), str = $ele.html(), progress = 0;
-            var apd_str;
+            var apd_str = "";
             $ele.html('');
             var timer = setInterval(function() {
                 var current = str.substr(progress, 1);
@@ -84,10 +84,10 @@ function startHeartAnimation() {
                 if (current == '<'){
                     console.log("HERE ENTER New4");
                     //apd_str = (progress & 1 ? '_' : '');
-                    apd_str = '_'
+                    //apd_str = '_'
                 } else {
                     console.log("HERE New4");
-                    apd_str = ''
+                    //apd_str = ''
                 }
                 
                 $ele.html(str.substring(0, progress) + apd_str);
