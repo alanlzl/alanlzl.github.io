@@ -79,14 +79,14 @@ function startHeartAnimation() {
                     progress++;
                 }
 
-                
+                $ele.html(str.substring(0, progress) + (progress & 1 ? '_' : ''));
+            
                 if (current == '<'){
-                    console.log("HERE ENTER New");
+                    console.log("HERE ENTER New2");
                 } else {
-                    console.log("HERE New");
+                    console.log("HERE New2");
                 }
                 
-                $ele.html(str.substring(0, progress) + (progress & 1 ? '_' : ''));
                 
                 var code = document.getElementById('code');
                 code.scrollTop = code.scrollHeight;
