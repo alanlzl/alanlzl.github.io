@@ -80,7 +80,7 @@ function startHeartAnimation() {
                     progress++;
                 }
                 
-                if (current == '<' || current == ' '){
+                if (current == '<' || current == '/t'){
                     console.log("HERE ENTER New6");
                     //apd_str = (progress & 1 ? '_' : '');
                     apd_str = ''
