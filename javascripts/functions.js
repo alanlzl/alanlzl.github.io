@@ -83,10 +83,10 @@ function startHeartAnimation() {
                 
                 if (current == '<'){
                     console.log("HERE ENTER New3");
-                    apd_str = (progress & 1 ? '_' : '');
+                    //apd_str = (progress & 1 ? '_' : '');
                 } else {
                     console.log("HERE New3");
-                    apd_str = '';
+                    //apd_str = '';
                 }
                 
                 $ele.html(str.substring(0, progress) + apd_str);
