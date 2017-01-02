@@ -78,16 +78,19 @@ function startHeartAnimation() {
                 } else {
                     progress++;
                 }
-
-                $ele.html(str.substring(0, progress) + (progress & 1 ? '_' : ''));
-            
+    
+                var apd_str = '';
+                
                 if (current == '<'){
                     console.log("HERE ENTER New2");
+                    apd_str = (progress & 1 ? '_' : '');
                 } else {
                     console.log("HERE New2");
+                    apd_str = '';
                 }
                 
-                
+                $ele.html(str.substring(0, progress) + apd_str;
+            
                 var code = document.getElementById('code');
                 code.scrollTop = code.scrollHeight;
                
